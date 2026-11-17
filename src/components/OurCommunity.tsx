@@ -1,0 +1,15 @@
+import { ArrowUpRight, HeartHandshake, Store } from "lucide-react";
+import { Reveal } from "@/components/Reveal";
+
+export default function OurCommunity() {
+  return <section id="community" className="section-pad noise bg-[#e9dcc7]">
+    <div className="mx-auto max-w-7xl">
+      <Reveal className="mx-auto mb-14 max-w-3xl text-center"><p className="eyebrow text-[#815d39]">A little more than hospitality</p><h2 className="font-display mt-5 text-5xl leading-[1.02] tracking-[-.055em] text-[#39271e] md:text-7xl">A space to grow.<br/><em className="font-normal text-[#98734f]">A community to thrive.</em></h2><p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#796653]">We believe a welcoming place can create opportunities beyond its walls. At FIKO, people and their potential are part of the story.</p></Reveal>
+      <div className="grid gap-6 md:grid-cols-2">
+        <Reveal><article className="overflow-hidden rounded-[1.5rem] bg-[#fffaf1]"><div className="photo aspect-[16/9]" style={{backgroundImage:"url(https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85)"}}/><div className="p-7 md:p-9"><span className="grid size-12 place-items-center rounded-full bg-[#eadcc8] text-[#815d39]"><HeartHandshake/></span><p className="eyebrow mt-6 text-[#a2764b]">Opportunity & empowerment</p><h3 className="font-display mt-3 text-4xl leading-tight text-[#39271e]">Making room for women to thrive.</h3><p className="mt-4 text-sm leading-7 text-[#796653]">We believe every woman deserves the opportunity to learn, contribute and grow. Our commitment is to create a welcoming environment where women can find opportunities and take their next steps.</p></div></article></Reveal>
+        <Reveal delay={.12}><article className="overflow-hidden rounded-[1.5rem] bg-[#39271e] text-[#fff5e4]"><div className="photo aspect-[16/9]" style={{backgroundImage:"url(https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=85)"}}/><div className="p-7 md:p-9"><span className="grid size-12 place-items-center rounded-full bg-white/10 text-[#e5bd91]"><Store/></span><p className="eyebrow mt-6 text-[#d0a77b]">A platform for local talent</p><h3 className="font-display mt-3 text-4xl leading-tight">Your talent deserves a place to shine.</h3><p className="mt-4 text-sm leading-7 text-[#d4c2ad]">A little space can open a big door. FIKO offers free stall space for people who need a place to showcase their skills, handmade creations and small ventures — from mehendi artists to local craft makers.</p><a href="#visit" className="mt-7 inline-flex items-center gap-3 border-b border-[#c49a6c] pb-2 text-xs font-bold uppercase tracking-[.15em] text-[#f0d1aa]">Enquire about a stall <ArrowUpRight size={15}/></a></div></article></Reveal>
+      </div>
+      <p className="mt-7 text-center text-[10px] leading-5 tracking-wide text-[#8b745b]">Illustrative wording for the pitch. Confirm the exact programme details and eligibility with the restaurant before launch.</p>
+    </div>
+  </section>;
+}
